@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>DZ-16 Ajax</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Current Weather</h1>
+      <form action="" method="GET">
+        <input type="text" placeholder="Search city">
+        <button type="submit"></button>
+      </form>
+    </header>
+    <div class="city">
+      <div class="info-city">
+        <div id="city">Kiev</div>
+        <div id="dateNow">05.03.2020</div>
+      </div>
+      <div class="weather-now">
+        <div class="weather">
+          <p id="how">Sunny</p>
+          <img id="imgNow" src="no-image.jpg" alt="img">
+        </div>
+        <div class="temp-now">
+          <p id="tempNow"><span id="tempNowNumber">18</span>&degC</p>
+        </div>
+        <div class="data-now">
+          <p>Min temperature: </p><p><span id="minTemp">18</span>&degC</p>
+          <p>Max temperature: </p><p><span id="maxTemp">18</span>&degC</p>
+          <p>Wind speed (km/h): </p><p id="windNow">3</p>
+        </div>
+      </div>
+    </div>
+    <div class="hourly">
+      <div class="hourly-title">Hearly</div>
+      <div class="hourly-data">
+        <p id="dayOfWeek" class="bold">Sunday</p>
+        <p id="time1" class="bold">7:00</p>
+        <p id="time2" class="bold">10:00</p>
+        <p id="time3" class="bold">13:00</p>
+        <p id="time4" class="bold">15:00</p>
+        <p id="time5" class="bold">18:00</p>
+        <p id="time6" class="bold">21:00</p>
+        <div class="img"></div>
+        <div class="img">
+          <img id="img1" src="no-image.jpg" alt="img">
+        </div>
+        <div class="img">
+          <img id="img2" src="no-image.jpg" alt="img">
+        </div>
+        <div class="img">
+          <img id="img3" src="no-image.jpg" alt="img">
+        </div>
+        <div class="img">
+          <img id="img4" src="no-image.jpg" alt="img">
+        </div>
+        <div class="img">
+          <img id="img5" src="no-image.jpg" alt="img">
+        </div>
+        <div class="img">
+          <img id="img6" src="no-image.jpg" alt="img">
+        </div>
+        <p class="bold">Forecast: </p>
+        <p id="how1">Sunny</p>
+        <p id="how2">Sunny</p>
+        <p id="how3">Sunny</p>
+        <p id="how4">Sunny</p>
+        <p id="how5">Sunny</p>
+        <p id="how6">Sunny</p>
+        <p class="bold">Temp (&degC): </p>
+        <p><span id="temp1">18</span>&degC</p>
+        <p><span id="temp2">18</span>&degC</p>
+        <p><span id="temp3">18</span>&degC</p>
+        <p><span id="temp4">18</span>&degC</p>
+        <p><span id="temp5">18</span>&degC</p>
+        <p><span id="temp6">18</span>&degC</p>
+        <p class="bold">Wind (km/h): </p>
+        <p id="wind1">2</p>
+        <p id="wind2">2</p>
+        <p id="wind3">2</p>
+        <p id="wind4">2</p>
+        <p id="wind5">2</p>
+        <p id="wind6">2</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
