@@ -27,7 +27,7 @@ function getWeather() {
       city.innerText = res.city.name;
       dateNow.innerText = date.toLocaleDateString();
       how.innerText = res.list[0].weather[0].main
-      imgNow.src = "http://openweathermap.org/img/wn/" + res.list[0].weather[0].icon + "@2x.png"
+      imgNow.src = "https://openweathermap.org/img/wn/" + res.list[0].weather[0].icon + "@2x.png"
       tempNowNumber.textContent = Math.floor(res.list[0].main.temp)
       minTemp.innerText = Math.floor(res.list[0].main.temp_min);
       maxTemp.innerText = Math.floor(res.list[0].main.temp_max);
@@ -48,7 +48,7 @@ function getWeather() {
         time.innerText = new Date(res.list[i].dt * 1000).getHours() + ":00";
         
         let img = document.querySelector(`#img${i+1}`)
-        img.src = "http://openweathermap.org/img/wn/" + res.list[i].weather[0].icon + "@2x.png"
+        img.src = "https://openweathermap.org/img/wn/" + res.list[i].weather[0].icon + "@2x.png"
         
         let how = document.querySelector(`#how${i+1}`)
         how.innerText = res.list[i].weather[0].main;
