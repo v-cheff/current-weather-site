@@ -16,7 +16,7 @@ function getWeather() {
     xhr = new ActiveXObject("Microsoft.XMLHTTP")
   }
 
-  xhr.open("GET", "http://api.openweathermap.org/data/2.5/forecast" + data)
+  xhr.open("GET", "https://api.openweathermap.org/data/2.5/forecast" + data)
   xhr.onreadystatechange = function() {
     if(xhr.readyState == 4 && xhr.status == 200) {
       let res = JSON.parse(xhr.response);
